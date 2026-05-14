@@ -1,0 +1,423 @@
+/* ============================
+   Global Styles - Placement Portal
+   ============================ */
+
+/* -- Reset & Base -- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  font-size: 15px;
+}
+
+/* ============================
+   Navbar (top bar)
+   ============================ */
+.navbar-custom {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* ============================
+   Sidebar (left navigation)
+   ============================ */
+.sidebar {
+  width: 220px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  min-height: calc(100vh - 50px);
+  padding: 15px 0;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  transition: transform 0.3s;
+}
+
+.sidebar .nav-link {
+  display: block;
+  padding: 10px 18px;
+  color: #444;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #e8f0fe;
+  color: #1a73e8;
+}
+
+.sidebar .nav-link.active {
+  background-color: #e8f0fe;
+  color: #1a73e8;
+  font-weight: bold;
+  border-left: 4px solid #1a73e8;
+}
+
+.sidebar .nav-link i {
+  margin-right: 8px;
+}
+
+/* ============================
+   Main Content Area
+   ============================ */
+.main-content {
+  margin-left: 220px;
+  padding: 25px;
+  min-height: calc(100vh - 50px);
+}
+
+/* ============================
+   Stat Cards (dashboard boxes)
+   ============================ */
+.stat-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #666;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* ============================
+   Drive / Info Cards
+   ============================ */
+.drive-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  transition: border-color 0.2s;
+}
+
+.drive-card:hover {
+  border-color: #1a73e8;
+}
+
+/* ============================
+   Simple Table
+   ============================ */
+.simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-size: 0.9rem;
+}
+
+.simple-table th {
+  background-color: #f0f4ff;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+  color: #333;
+}
+
+.simple-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.simple-table tr:hover {
+  background-color: #f9faff;
+}
+
+/* ============================
+   Forms
+   ============================ */
+.form-control,
+.form-select {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  background-color: #fff;
+  color: #222;
+  width: 100%;
+}
+
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+}
+
+.form-label {
+  font-size: 0.85rem;
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* ============================
+   Buttons
+   ============================ */
+.btn {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+.btn-primary,
+.btn-gradient {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-gradient:hover {
+  background-color: #1558b0;
+  color: white;
+}
+
+.btn-success {
+  background-color: #34a853;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #278a43;
+}
+
+.btn-danger {
+  background-color: #ea4335;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c5372c;
+}
+
+.btn-warning {
+  background-color: #fbbc04;
+  color: #222;
+}
+
+.btn-secondary {
+  background-color: #aaa;
+  color: white;
+}
+
+.btn-outline-secondary {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  color: #444;
+}
+
+.btn-outline-danger {
+  background-color: #fff;
+  border: 1px solid #ea4335;
+  color: #ea4335;
+}
+
+.btn-outline-info {
+  background-color: #fff;
+  border: 1px solid #1a73e8;
+  color: #1a73e8;
+}
+
+.btn-outline-warning {
+  background-color: #fff;
+  border: 1px solid #fbbc04;
+  color: #856404;
+}
+
+.btn-outline-primary {
+  background-color: #fff;
+  border: 1px solid #1a73e8;
+  color: #1a73e8;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-sm {
+  padding: 4px 10px;
+  font-size: 0.82rem;
+}
+
+.btn-lg {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+/* ============================
+   Badges (status labels)
+   ============================ */
+.badge {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  background-color: #aaa;
+}
+
+.badge-pending {
+  background-color: #fbbc04;
+  color: #222;
+}
+
+.badge-approved {
+  background-color: #34a853;
+  color: white;
+}
+
+.badge-rejected {
+  background-color: #ea4335;
+  color: white;
+}
+
+.badge-closed {
+  background-color: #888;
+}
+
+.badge-applied {
+  background-color: #1a73e8;
+}
+
+.badge-shortlisted {
+  background-color: #ff8c00;
+}
+
+.badge-selected {
+  background-color: #34a853;
+}
+
+.badge-blacklisted {
+  background-color: #fff;
+  border: 1px solid #ea4335;
+  color: #ea4335;
+}
+
+/* Bootstrap bg-danger, bg-warning, bg-primary, bg-info for toasts */
+.text-bg-success {
+  background-color: #34a853 !important;
+  color: white !important;
+}
+
+.text-bg-danger {
+  background-color: #ea4335 !important;
+  color: white !important;
+}
+
+.text-bg-warning {
+  background-color: #fbbc04 !important;
+  color: #222 !important;
+}
+
+.text-bg-info {
+  background-color: #1a73e8 !important;
+  color: white !important;
+}
+
+/* ============================
+   Auth (Login / Register) Page
+   ============================ */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f6f8;
+}
+
+.auth-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 35px 30px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.auth-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+/* ============================
+   Toast Notifications
+   ============================ */
+.toast-container {
+  position: fixed;
+  top: 65px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.toast {
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 260px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================
+   Responsive — Mobile
+   ============================ */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+}
